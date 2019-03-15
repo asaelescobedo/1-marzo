@@ -1,0 +1,24 @@
+int valorR;
+int valorB;
+int valorG;
+int valorR2;
+int valorB2;
+int valorG2;
+int r= 14;
+int b=16; 
+int g=18;
+
+void setup() {
+  Serial.begin(9600);}
+
+void loop() {
+valorR=analogRead(A0);
+valorR2=map(valorR,0,1023,0,255);
+analogWrite(r,valorR2);
+valorB=analogRead(A1);
+valorB2=map(valorR,0,1023,0,255);
+analogWrite(b,valorB);
+valorG=analogRead(A1);
+valorG2=map(valorR,0,1023,0,255);
+analogWrite(g,valorG);
+}
