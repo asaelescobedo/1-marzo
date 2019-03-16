@@ -8,10 +8,13 @@ int r= 14;
 int b=16; 
 int g=18;
 
-void setup() {
-  Serial.begin(9600);}
+void setup() 
+{
+  Serial.begin(9600);
+  }
 
-void loop() {
+void loop() 
+{
 valorR=analogRead(A0);
 valorR2=map(valorR,0,1023,0,255);
 analogWrite(r,valorR2);
